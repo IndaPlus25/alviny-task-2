@@ -27,4 +27,6 @@ target
 *.lock
 .vscode
 # ignoring TXT files so I can have notes in this repo
-*.txt
+summera-tal/*.txt
+
+*.py

@@ -7,8 +7,12 @@ fn main() {
         .map(|_line| _line.ok().unwrap())
         .collect::<Vec<String>>();
     // let input: &'static str = "1 2 3 4 5 6";
-    eprintln!("{:?}", lines);
-    println!("{}", halfsum(&lines[1]));
+    //println!("{:?}", lines);
+    if lines.len() > 1 {
+        println!("{}", halfsum(&lines[1]));
+    } else {
+        println!("0")
+    }
 }
 
 fn halfsum(input: &str) -> u32 {
@@ -26,7 +30,8 @@ fn halfsum(input: &str) -> u32 {
         .iter()
         .take(input_vector.len().div_ceil(2)) {
             new_input.push(i)
-    }
+    };
+    //println!("{:?}", input_vector);
     let mut x = 0;
     for i in new_input {
         x += i;
