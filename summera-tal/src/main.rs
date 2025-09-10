@@ -15,12 +15,18 @@ fn main() {
     }
 }
 
-fn halfsum(input: &str) -> u32 {
-    let mut input_vector: Vec<u32> = input
+fn halfsum(input: &str) -> i64 {
+    let mut temp/* : Vec<i64>*/ = input
+        // convert input into a vector of signed 64bit integers AND NOTHING ELSE
         .split(' ')
-        .map(|x| x.parse::<u32>().unwrap())
-        .collect::<Vec<u32>>();
-        // sort to find largeset number
+        .collect::<Vec<&str>>();
+    temp.retain(|x| !x.is_empty());
+
+    let mut input_vector: Vec<i64> = temp
+        .iter()
+        .map(|x| x.parse::<i64>().ok().unwrap())
+        .collect::<Vec<i64>>();
+        // sort to find largest number
     input_vector.sort();
     input_vector.reverse();
     // input_vector has structure [1, 2, 3,... ]
