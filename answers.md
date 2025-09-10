@@ -4,6 +4,6 @@ Exempel. "0100 1001" => \[\[false, true, false, false], \[true, false, false, tr
 
 Exempel. "n0llan" => \[\[true, false, true, true, true, true\]\]
 
-2. a. index_store är en hashmap där keys är siffrorna 1-10, och value = key-1.
+2. a. index_store är en hashmap där keys är siffrorna 1-10, och value = key-1.\n
    b. value_store är en Vec av hash sets med längden 1 som innehåller ett tal var. Hela vectorn innehåller talen 1-10.
    Exempel. [{1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}]
