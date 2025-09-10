@@ -26,7 +26,9 @@ target
 /target
 *.lock
 .vscode
-# ignoring TXT files so I can have notes in this repo
+# ignoring other files so that i can have other junk in here
 summera-tal/*.txt
-
+other-questions
+answers.txt
+output.txt
 *.py
