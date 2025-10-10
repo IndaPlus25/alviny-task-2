@@ -9,5 +9,5 @@ Next run with the following command:
 
 ```bash
 cd cyber-clara # Exchange this for summera-tal if you're trying to run that crate.
-cargo run < test_data.txt.
+cargo run < test.txt.
 ```
